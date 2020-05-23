@@ -1,5 +1,6 @@
 """
 A simple app to create a JWT token.
+Comments
 """
 import os
 import logging
