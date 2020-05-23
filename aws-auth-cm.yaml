@@ -10,9 +10,9 @@ data:
       groups:
         - system:bootstrappers
         - system:nodes
-   - groups:
-     - system:masters
-     rolearn: <arn:aws:iam::001654615211:role/UdacityFlaskDeployCBKubectlRole>
-     username: build
+    - rolearn: <arn:aws:iam::001654615211:role/UdacityFlaskDeployCBKubectlRole>
+      username: build
+      groups:
+      - system:masters
   mapUsers: |
     []
