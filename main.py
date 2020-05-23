@@ -4,9 +4,7 @@ Comments
 """
 import os
 import logging
-import datetime
-import functools
-import jwt
+import datetime import functools import jwt
 
 # pylint: disable=import-error
 from flask import Flask, jsonify, request, abort
@@ -59,6 +57,7 @@ def require_jwt(function):
 
 @APP.route('/', methods=['POST', 'GET'])
 def health():
+    print('Hello World!') 
     return jsonify("Healthy")
 
 
